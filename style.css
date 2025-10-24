@@ -209,7 +209,7 @@ body {
   }
 
   .heart {
-    top: 85%; 
+    top: 78%; 
     transform: translate(-50%, 0);
   }
 
@@ -232,7 +232,7 @@ body {
   }
 
   .heart {
-    top: 88%;
+    top: 80%;
   }
 
   .heart > img {
