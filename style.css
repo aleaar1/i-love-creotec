@@ -36,23 +36,23 @@ body {
 }
 
 .container {
-  position: relative;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
+  position: relative;
 }
 
 .heart {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  text-align: center;
-  transform: translate(-50%, -50%);
-  transition: transform 2s;
-  z-index: 1;
-  cursor: pointer;
+  position: relative;
+  top: auto;
+  left: auto;
+  transform: none;
+  margin-top: 20px;
+  z-index: 2;
+}
 }
 
 .heart > img {
@@ -79,11 +79,11 @@ body {
   max-width: 550px;
   height: auto;
   max-height: 80vh;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 0;
+  position: relative;
+  top: auto;
+  left: auto;
+  transform: none;
+  margin: 0 auto;
 
   animation-name: openmsg;
   animation-duration: 2s;
@@ -196,24 +196,16 @@ body {
 }
 
 @media (max-width: 768px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-
   .message {
     width: 90%;
     max-width: 400px;
     font-size: 15px;
-    padding: 20px;
+    line-height: 1.5;
+    max-height: 70vh;
   }
 
   .heart > img {
     width: 40px;
-  }
-
-  .instruction {
-    font-size: 1.2rem;
-    top: 35%;
   }
 }
 
@@ -227,4 +219,4 @@ body {
   .heart > img {
     width: 35px;
   }
-}
+} 
