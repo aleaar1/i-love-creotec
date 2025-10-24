@@ -194,3 +194,36 @@ body {
   top: 78%;
   transform: translate(-50%, 0);
 }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .message {
+    width: 90%;
+    max-width: 400px;
+    font-size: 15px;
+    padding: 20px;
+  }
+
+  .heart > img {
+    width: 40px;
+  }
+
+  .instruction {
+    font-size: 1.2rem;
+    top: 35%;
+  }
+}
+@media (max-width: 480px) {
+  .message {
+    width: 95%;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .heart > img {
+    width: 35px;
+  }
+}
